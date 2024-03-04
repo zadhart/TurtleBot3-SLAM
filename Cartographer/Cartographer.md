@@ -20,7 +20,7 @@ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 
 You should be able to see the Gazebo simulation with the TurtleBot 3 house:
 
-!(https://github.com/zadhart/TurtleBot3-SLAM/blob/master/Cartographer/Images/cartographer_simulation_world.png)
+![plot](./Images/cartographer_simulation_world.png)
 
 ## Launching the SLAM node
 
@@ -32,7 +32,7 @@ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 
 A new window of RVIZ running the Cartographer algorithm should be open, like this one:
 
-!(https://github.com/zadhart/TurtleBot3-SLAM/blob/master/Cartographer/Images/cartographer_slam_node.png)
+![plot](./Images/cartographer_slam_node.png)
 
 ## Launching the Teleoperation Node
 
@@ -44,7 +44,7 @@ ros2 run turtlebot3_teleop teleop_keyboard
 
 Control the robot to scan all rooms of the house. When you are ready, proceed to the next section to learn how to save the generated map.
 
-!(https://github.com/zadhart/TurtleBot3-SLAM/blob/master/Cartographer/Images/cartographer_teleop.png)
+![plot](./Images/cartographer_teleop.png)
 
 ## Saving the map
 
@@ -56,7 +56,7 @@ ros2 run nav2_map_server map_saver_cli -f ~/map
 
 You should now have a map of the house, similar to this one:
 
-!(https://github.com/zadhart/TurtleBot3-SLAM/blob/master/Cartographer/Images/cartographer_map.png)
+![plot](./Images/cartographer_map.png)
 
 ## Launching the navigation node
 
@@ -72,10 +72,10 @@ PS. Remember to close all the other nodes and launch the simulation world again.
 
 Before starting to send navigation goals to your robot, first, you need to estimate the 2D pose of the TurtleBot. Click on the 2D pose estimation and place the arrow in the position of the robot with the correct orientation.
 
-!(https://github.com/zadhart/TurtleBot3-SLAM/blob/master/Cartographer/Images/cartographer_navigation_pose_estimation.png)
+![plot](./Images/cartographer_navigation_pose_estimation.png)
 
 ## Navigating in the environment
 
 Now that the navigation node knows where the robot is, you can set navigation goals to make the robot navigate in the environment.
 
-!(https://github.com/zadhart/TurtleBot3-SLAM/blob/master/Cartographer/Images/cartographer_navigation.png)
+![plot](./Images/cartographer_navigation.png)
